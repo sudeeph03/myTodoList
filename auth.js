@@ -4,9 +4,7 @@ import jwt from "jsonwebtoken";
 import { UserModel } from "./db.js";
 const JWT_SECRET = "IloveJS";
 
-await mongoose.connect(
-    "mongodb+srv://sudeephukkerikar234:KuF233b20skotL6G@cluster0.mqtit.mongodb.net/Todo-App"
-);
+await mongoose.connect("");
 
 async function signUp(req, res) {
     const { username, email, password } = req.body;
